@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=Bayon&display=swap');
+@font-face {
+    font-family: 'Signature';
+    src: url('/fonts/signature.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --blue: #98FFFF;
+    --yellow: #FFC259;
+    --orange: #FFA46F;
+    --dark: #101820;
+    --light-font: 'Barlow Condensed', sans-serif;
+    --bold-font: 'Bayon', sans-serif;
+    --signature: 'Signature', sans-serif;
+    --container-padding: 150px;
+}
+
+::selection {
+    background-color: var(--orange);
+    color: #FFF;
+}
+
+html {
+    scroll-padding-top: 120px;
+    scroll-behavior: smooth;
+    background-color: var(--dark);
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--container-padding);
+    margin: 0 auto;
+    position: fixed;
+    top: 53px;
+    left: 0;
+    z-index: 999;
+    right: 0;
+}
+
+header h1 {
+    font-family: var(--signature), sans-serif;
+    color: #fff;
+    font-size: 50px;
+}
+
+header nav {
+    display: flex;
+    width: 562px;
+    justify-content: space-between;
+    align-items: center;
+    width: calc( 100% - 100.79 * 2 );
+}
+
+header nav a {
+    font-family: var(--light-font);
+    color: var(--blue);
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+header nav a:hover {
+    color: var(--yellow);
+}
+
+
+header nav a img {
+    width: 25px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+header nav a:hover img {
+    opacity: 0.5;
+}
+
+footer {
+    background: var(--dark)
+}
+
+@media(max-width: 1100px) {
+    header {
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    header h1 {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    header nav a {    
+        display: none;
+    }
+}

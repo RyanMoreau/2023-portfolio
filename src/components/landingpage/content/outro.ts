@@ -1,0 +1,2 @@
+export const outroTitle = 'As a seasoned full stack developer'
+export const outroDescription = 'with 15 years collective experience, I have a passion for creating beautiful, responsive, and functional websites. Lets connect.'

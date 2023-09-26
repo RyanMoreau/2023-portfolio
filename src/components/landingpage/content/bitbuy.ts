@@ -1,0 +1,2 @@
+export const bitbuyTitle = 'Regulated Trading Exchange'
+export const bitbuyDescription = 'The crypto destination of investors. Established in 2016, Bitbuy is Canada’s most secure and trusted platform for BTC, ETH and other cryptocurrencies.'
