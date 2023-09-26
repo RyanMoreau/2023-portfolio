@@ -1,17 +1,18 @@
 {
-  "name": "@monnicore/uncut-gems",
+  "name": "@ryanmoreau/portfolio",
   "type": "module",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
+    "start": "node dist/server/entry.mjs",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/mdx": "^0.16.0",
+    "@astrojs/node": "^6.0.1",
     "@astrojs/react": "^2.0.2",
     "@astrojs/rss": "^2.1.0",
     "@astrojs/sitemap": "^1.0.1",
@@ -19,7 +20,7 @@
     "@fontsource/bayon": "^4.5.8",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
-    "astro": "^2.0.6",
+    "astro": "^2.10.15",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-markdown": "^8.0.5",
