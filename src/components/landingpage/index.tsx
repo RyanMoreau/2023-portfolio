@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import ScrollSpy from "react-ui-scrollspy";
-import { EMAIL_LINK, LINKEDIN_LINK } from '../../consts';
+import { EMAIL_LINK, LINKEDIN_LINK, GITHUB_LINK } from '../../consts';
 import { pageContent, HiThere, Outro, Studying } from './content/index'
 import './landing.css'
 
@@ -59,6 +59,7 @@ function LandingPage(): JSX.Element {
                         <address>
                             <a href={EMAIL_LINK} target="_blank"><img src="/icon/mail.svg" alt="Catch up over email" /></a>
                             <a href={LINKEDIN_LINK} target="_blank"><img src="/icon/linkedin.svg" alt="View the resume on LinkedIn" /></a>
+                            <a href={GITHUB_LINK} target="_blank"><img src="/icon/github.svg" alt="View the resume on LinkedIn" /></a>
                         </address>
                     </div>
                 </section>
