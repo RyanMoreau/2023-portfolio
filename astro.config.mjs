@@ -13,6 +13,9 @@ export default defineConfig({
   integrations: [mdx(), sitemap(), react()],
   output: "server",
   adapter: node({
-    mode: "standalone"
-  })
+    mode: "standalone",
+  }),
+  server: {
+    host: "0.0.0.0",
+  },
 });
