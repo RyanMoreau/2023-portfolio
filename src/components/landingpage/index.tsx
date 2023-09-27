@@ -46,7 +46,7 @@ function LandingPage(): JSX.Element {
                         <span className="skills">
                             {Studying.skills.map((skill) => {
                                 return (
-                                    <h3 key={skill} className="skill">{skill}</h3>
+                                    <h2 key={skill} className="skill">{skill}</h2>
                                 )
                             })}
                         </span>
