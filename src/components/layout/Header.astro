@@ -1,18 +1,29 @@
 ---
-import '../layout/layout.css'
-import { EMAIL_LINK, LINKEDIN_LINK } from '../../consts'
+import "../layout/layout.css";
+import { EMAIL_LINK, LINKEDIN_LINK } from "../../consts";
+import { pageContent, Studying } from "../landingpage/content";
 ---
+
 <header>
-	<h1>Ryan Moreau</h1>
-	<nav>
-		<a href="#hi-there" data-to-scrollspy-id="hi-there">Hi There</a>
-		<a href="#staratlas" data-to-scrollspy-id="staratlas">Star Atlas</a>
-		<a href="#element6" data-to-scrollspy-id="element6">Element 6</a>
-		<a href="#bitbuy" data-to-scrollspy-id="bitbuy">Bitbuy</a>
-		<a href="#tygershark" data-to-scrollspy-id="tygershark">Tyger Shark</a>
-		<span class="social-icons">
-			<a href={EMAIL_LINK} target="_blank"><img src="/icon/mail.svg" alt="Catch up over email" /></a>
-			<a href={LINKEDIN_LINK} target="_blank"><img src="/icon/linkedin.svg" alt="View the resume on LinkedIn" /></a>
-		</span>
-	</nav>
+  <h1>Ryan Moreau</h1>
+  <nav>
+    {
+      pageContent.map((content) => {
+        return (
+          <a href={`#${content.id}`} data-to-scrollspy-id={content.id}>
+            {content.company}
+          </a>
+        );
+      })
+    }
+    <a href={`#${Studying.id}`} data-to-scrollspy-id={Studying.id}> Current</a>
+    <span class="social-icons">
+      <a href={EMAIL_LINK} target="_blank">
+        <img src="/icon/mail.svg" alt="Catch up over email" />
+      </a>
+      <a href={LINKEDIN_LINK} target="_blank">
+        <img src="/icon/linkedin.svg" alt="View the resume on LinkedIn" />
+      </a>
+    </span>
+  </nav>
 </header>

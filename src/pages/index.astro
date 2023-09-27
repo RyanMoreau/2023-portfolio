@@ -1,21 +1,21 @@
 ---
-import '@fontsource/barlow-condensed';
-import '@fontsource/bayon';
-import BaseHead from '../components/layout/BaseHead.astro';
-import Header from '../components/layout/Header.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import LandingPage from '../components/landingpage/index';
+import "@fontsource/barlow-condensed";
+import "@fontsource/bayon";
+import Meta from "../components/layout/meta.astro";
+import Header from "../components/layout/Header.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import LandingPage from "../components/landingpage/index";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<LandingPage client:only />
-		</main>
-	</body>
+  <head>
+    <Meta title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <LandingPage client:only />
+    </main>
+  </body>
 </html>

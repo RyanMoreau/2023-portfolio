@@ -1,2 +1,0 @@
-export const tsTitle = 'Digital Agency'
-export const tsDescription = 'A creative, digital-first agency that helps brands sell, grow & win. Past clients include Drake, Toronto Raptors, Toronto Maple Leafs, and more.'

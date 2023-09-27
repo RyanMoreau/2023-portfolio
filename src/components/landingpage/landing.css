@@ -21,6 +21,7 @@ section {
 
 section div {
     max-width: 880px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -93,12 +94,18 @@ p {
     opacity: 1;
 }
 
+.active-scroll-spy .skills {
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+    transition-delay: 1.5s;
+}
+
 /* * Last Slide */
-.last-slide {
+#outro {
     text-align: center;
 }
 
-.last-slide h3 {
+#outro h3 {
     font-family: 'Bayon';
     font-style: normal;
     font-weight: 400;
@@ -107,11 +114,11 @@ p {
     color: #FFF;
 }
 
-.last-slide h3 span {
+#outro h3 span {
     color: var(--yellow);
 }
 
-.last-slide img.footer-logo {
+#outro img.footer-logo {
     background: rgb(16 24 32 / 40%);
     z-index: 999;
     position: relative;
@@ -120,15 +127,33 @@ p {
     opacity: 0;
 }
 
-.last-slide address {
-    opacity: 0;
-}
-
 .active-scroll-spy img.footer-logo,
 .active-scroll-spy address {
     opacity: 1;
     transition: 0.3s ease-in-out;
     transition-delay: 0.8s;
+}
+
+
+.skills {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    max-width: 90%;
+    flex-wrap: wrap;
+    opacity: 0;
+}
+
+h3.skill {
+    padding: 10px;
+    margin: 0;
+    line-height: 20px;
+    background: var(--orange);
+    color: #fff;
+    border-radius: 10px;
+    font-family: var(--light-font);
+    user-select: none;
+    font-size: 20px;
 }
 
 @media (max-width: 1100px) {
@@ -152,8 +177,15 @@ p {
     section img.small {
         width: 50% !important;
     }
-    .last-slide img.footer-logo {
+    #outro img.footer-logo {
         display: none;
+    }
+    .skills {
+        margin: 10px 0;
+        gap: 5px;
+    }
+    h3.skill {
+        font-size: 15px;
     }
 }
 
@@ -189,5 +221,16 @@ span.logo {
     }
     section {
         display: none;
+    }
+}
+
+@media(max-width: 767px) {
+    #outro h3 {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    #outro img {
+        width: 35px;
     }
 }
