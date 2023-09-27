@@ -18,7 +18,7 @@ function LandingPage(): JSX.Element {
                 <section id={HiThere.id} data-to-scrollspy-id={HiThere.id}
                     style={{ backgroundImage: `url(${HiThere.image})` }}>
                     <div>
-                        <h3>{HiThere.title}</h3>
+                        <h2>{HiThere.title}</h2>
                         <p>{HiThere.description}</p>
                     </div>
                 </section>
@@ -27,7 +27,7 @@ function LandingPage(): JSX.Element {
                     return (
                         <section key={content.title} id={content.id} data-to-scrollspy-id={content.id}>
                             <div>
-                                <h3>{content.title}</h3>
+                                <h2>{content.title}</h2>
                                 <p>{content.description}</p>
                                 {content.image &&
                                     <a href={content.link} target='_blank'>
@@ -41,12 +41,12 @@ function LandingPage(): JSX.Element {
                 {/* What I'm Up To */}
                 <section id={Studying.id} data-to-scrollspy-id={Studying.id}>
                     <div>
-                        <h3>{Studying.title}</h3>
+                        <h2>{Studying.title}</h2>
                         <p>{Studying.description}</p>
                         <span className="skills">
                             {Studying.skills.map((skill) => {
                                 return (
-                                    <h2 key={skill} className="skill">{skill}</h2>
+                                    <h3 key={skill} className="skill">{skill}</h3>
                                 )
                             })}
                         </span>
@@ -55,7 +55,7 @@ function LandingPage(): JSX.Element {
                 {/* Outro */}
                 <section id={Outro.id} data-to-scrollspy-id={Outro.id}>
                     <div>
-                        <h3><span>{Outro.title}</span> {Outro.description}</h3>
+                        <h4><span>{Outro.title}</span> {Outro.description}</h4>
                         <address>
                             <a href={EMAIL_LINK} target="_blank"><img src="/icon/mail.svg" alt="Catch up over email" /></a>
                             <a href={LINKEDIN_LINK} target="_blank"><img src="/icon/linkedin.svg" alt="View the resume on LinkedIn" /></a>

@@ -17,6 +17,8 @@ export const Studying: Skills = {
         'Apache',
         'PostgreSQL',
         'MySQL',
+        'AI',
+        'MedusaJS',
         'MongoDB',
         'Data Sovereignty',
         'TailwindCSS',

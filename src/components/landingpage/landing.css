@@ -61,7 +61,7 @@ address a img {
     color: var(--yellow);
 }
 
-h3 {
+h2 {
     font-family: var(--light-font);
     color: var(--blue);
     font-weight: 400;
@@ -85,12 +85,22 @@ p {
     transition-delay: 0.8s;
 }
 
+address,
+h4 {
+    opacity: 0;
+    transition: 0.3s ease;
+    transition-delay: 0.5s;
+}
+
 .scroll-container {
     scroll-snap-align: start;
 }
 
+.active-scroll-spy h2,
 .active-scroll-spy h3,
-.active-scroll-spy p {
+.active-scroll-spy h4,
+.active-scroll-spy p,
+.active-scroll-spy address {
     opacity: 1;
 }
 
@@ -105,7 +115,7 @@ p {
     text-align: center;
 }
 
-#outro h3 {
+#outro h4 {
     font-family: 'Bayon';
     font-style: normal;
     font-weight: 400;
@@ -114,7 +124,7 @@ p {
     color: #FFF;
 }
 
-#outro h3 span {
+#outro h4 span {
     color: var(--yellow);
 }
 
@@ -134,7 +144,6 @@ p {
     transition-delay: 0.8s;
 }
 
-
 .skills {
     display: flex;
     gap: 10px;
@@ -142,6 +151,9 @@ p {
     max-width: 90%;
     flex-wrap: wrap;
     opacity: 0;
+    max-height: 200px;
+    overflow: scroll;
+    position: relative;
 }
 
 h3.skill {
@@ -161,7 +173,7 @@ h3.skill {
         padding: 0 calc(var(--container-padding) / 4);
         min-height: auto;
     }
-    h3 {
+    h2 {
         font-size: 24px;
     }
     p {
@@ -225,7 +237,7 @@ span.logo {
 }
 
 @media(max-width: 767px) {
-    #outro h3 {
+    #outro h4 {
         font-size: 24px;
         line-height: 35px;
     }
