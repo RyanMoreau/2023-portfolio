@@ -245,4 +245,8 @@ span.logo {
     #outro img {
         width: 35px;
     }
+
+    span.logo {
+        bottom: 60px;
+    }
 }
